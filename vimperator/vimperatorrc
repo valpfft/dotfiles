@@ -1,0 +1,116 @@
+" Make firefox run faster by using JIT
+!set javascript.options.jit.chrome=true
+
+set visualbell
+highlight Bell display:none
+
+" Don't focus text area automatically
+set focuscontent
+
+" Default search engine
+set defsearch=duckduckgo
+
+" Highlight search keyword
+set hlsearch
+
+" Characters of hit-a-hint
+set hintchars="hfjdkslaqwertuiop"
+
+" Toolbar is smart
+set gui=addons,nobookmarks,nomenu,nonavigation,notabs
+
+" Hint size:
+:highlight Hint font:"DejaVu Sans Mono";font-size:140%;color:red;background-color:yellow;padding:2px;
+
+
+" More scroll
+map j 5<C-e>
+map k 5<C-y>
+
+" Select candidates like vim
+cmap <C-n> <Tab>
+cmap <C-p> <S-Tab>
+
+" Tab closing
+no dd :tabclose<CR>
+map d <NOP>
+
+" Disable keys
+map <C-k> <NOP>
+map <C-x> <NOP>
+
+" History forward/backward
+map H <A-Left>
+map L <A-Right>
+
+map <C-s> /
+
+" Move tab
+map <A-h> gT
+map <A-l> gt
+
+" Copy title
+nnoremap <A-y> :js util.copyToClipboard(buffer.title+' : '+buffer.URL, true)<CR>
+nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
+
+" editor
+set editor='emacsclient -c'
+
+" Disable vimperator sites
+ignorekeys add mail.google.com
+ignorekeys add reader.livedoor.com
+
+" ==================
+"" Cyrillic letters:
+map Ф A
+map И B
+map С C
+map В D
+map У E
+map А F
+map П G
+map Р H
+map Ш I
+map О J
+map Л K
+map Д L
+map Ь M
+map Т N
+map Щ O
+map З P
+map Й Q
+map К R
+map Ы S
+map Е T
+map Г U
+map М V
+map Ц W
+map Ч X
+map Н Y
+map Я Z
+map ф a
+map и b
+map с c
+map в d
+map у e
+map а f
+map п g
+map р h
+map ш i
+map о j
+map л k
+map д l
+map ь m
+map т n
+map щ o
+map з p
+map й q
+map к r
+map ы s
+map е t
+map г u
+map м v
+map ц w
+map ч x
+map н y
+map я z

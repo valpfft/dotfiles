@@ -1,0 +1,28 @@
+# -*- shell-script -*-
+
+"xbacklight -dec 10"
+  XF86MonBrightnessDown
+
+"xbacklight -inc 10"
+  XF86MonBrightnessUp
+
+"pulseaudio-ctl down"
+  XF86AudioLowerVolume
+
+"pulseaudio-ctl up"
+  XF86AudioRaiseVolume
+
+"pulseaudio-ctl mute"
+  XF86AudioMute
+
+"playerctl play-pause"
+  XF86AudioPlay
+
+"playerctl pause"
+  XF86AudioPause
+
+"playerctl next"
+  XF86AudioNext
+
+"playerctl previous"
+  XF86AudioPrev

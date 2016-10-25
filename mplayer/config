@@ -1,0 +1,27 @@
+# Write your default config options here!
+vo="xv" # video output
+ao="alsa" # audio output
+mixer-channel="Master"
+srate=48000
+
+really-quiet="1" # be quiet
+
+zoom="1"
+aid="1"
+sid="0"
+
+#Display
+
+double="yes" # double buffering
+monitoraspect="16:9"
+ffactor="10" #black outline
+sub-bg-alpha="0" #background color ala closed captions
+sub-bg-color="0" #black to white
+subfont-text-scale="3.7" #truetype font scaling
+subfont-blur="1" #Slight blur
+
+autoq=100
+vf=pp=de,hqdn3d
+
+subpos="90" #By default subtitles are too low
+subalign="2"
