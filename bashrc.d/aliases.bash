@@ -8,6 +8,7 @@ alias ln="ln -v"
 alias ls="ls --color -h"
 alias mkdir="mkdir -p"
 alias tree="tree -C" # add colors
+alias p="pavucontrol" # switch audio source
 
 ### Ruby/Rails-specific
 alias s="rspec"
