@@ -10,7 +10,7 @@ export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export NAME="Valiantsin Mikhaliuk"
-export PROMPT_DIRTRIM=3
+export PROMPT_DIRTRIM=1
 export GOPATH=~/go
 
 source "/usr/local/share/chruby/chruby.sh"
