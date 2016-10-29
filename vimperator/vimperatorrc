@@ -59,6 +59,7 @@ set editor='emacsclient -c'
 " Disable vimperator sites
 ignorekeys add mail.google.com
 ignorekeys add reader.livedoor.com
+ignorekeys add youtube.com
 
 " ==================
 "" Cyrillic letters:
