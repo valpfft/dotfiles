@@ -1,0 +1,125 @@
+! URxvt.background: #002b36
+! URxvt.foreground: #657b83
+! !!URxvt.fading: 40
+! URxvt.fadeColor: #002b36
+! URxvt.cursorColor: #93a1a1
+! URxvt.pointerColorBackground: #586e75
+! URxvt.pointerColorForeground: #93a1a1
+
+! !! black dark/light
+! URxvt.color0: #073642
+! URxvt.color8: #002b36
+
+! !! red dark/light
+! URxvt.color1: #dc322f
+! URxvt.color9: #cb4b16
+
+! !! green dark/light
+! URxvt.color2: #859900
+! URxvt.color10: #586e75
+
+! !! yellow dark/light
+! URxvt.color3: #b58900
+! URxvt.color11: #657b83
+
+! !! blue dark/light
+! URxvt.color4: #268bd2
+! URxvt.color12: #839496
+
+! !! magenta dark/light
+! URxvt.color5: #d33682
+! URxvt.color13: #6c71c4
+
+! !! cyan dark/light
+! URxvt.color6: #2aa198
+! URxvt.color14: #93a1a1
+
+! !! white dark/light
+! URxvt.color7: #eee8d5
+! URxvt.color15: #fdf6e3
+
+
+!black.normal     : xoria256.LineNr.guibg
+!black.bright     : black.normal.rgb - 8
+URxvt.color0      : #121212
+URxvt.color8      : #0a0a0a
+
+!red.normal       : red.bright.r - 8
+!red.bright       : xoria256.Special.guifg
+URxvt.color1      : #d78787
+URxvt.color9      : #df8787
+
+!green.normal     : green.bright.g - 8
+!green.bright     : xoria256.PreProc.guifg
+
+URxvt.color2      : #afd787
+URxvt.color10     : #afdf87
+
+!yellow.normal    : yellow.bright.rg - 8
+!yellow.bright    : xoria256.Special.guifg
+
+URxvt.color3      : #f7f7af
+URxvt.color11     : #ffffaf
+
+!blue.normal      : blue.bright.b - 8
+!blue.bright      : xoria256.Statement.guifg
+
+URxvt.color4      : #87afd7
+URxvt.color12     : #87afdf
+
+!magenta.normal   : magenta.bright.rb - 8
+!magenta.bright   : xoria256.Identifier.guifg
+
+URxvt.color5      : #d7afd7
+URxvt.color13     : #dfafdf
+
+!cyan.normal      : cyan.bright.gb - 8
+!cyan.bright      : green.bright + blue.bright
+
+URxvt.color6      : #afd7d7
+URxvt.color14     : #afdfdf
+
+!white.normal     : white.bright.rgb - 8
+!white.bright     : xoria256.Folded.guifg
+
+URxvt.color7      : #e6e6e6
+URxvt.color15     : #eeeeee
+
+!foreground       : xoria256.Normal.guifg
+!background       : xoria256.Normal.guibg
+!cursor           : xoria256.Cursor.guibg
+
+URxvt.foreground  : #d0d0d0
+URxvt.background  : #1c1c1c
+URxvt.cursorColor : #ffaf00
+
+!bold             : xoria256.Type.guifg
+!underline        : xoria256.htmlValue.guifg
+
+URxvt.colorBD     : #afafdf
+URxvt.colorUL     : #dfdfaf
+
+URxvt*font: xft:Dejavu Sans Mono:size=12
+URxvt*boldFont: xft:Dejavu Sans Mono:size=12
+
+xterm*vt100.initialFont: 6
+!Disable the insanely annoying Ctrl-Shift shortcut that enters ISO14755 mode
+URxvt.iso14755: False
+URxvt.scrollBar: False
+URxvt.scrollTtyOutput: False
+URxvt.scrollTtyKeypress: True
+URxvt.secondaryScroll: False
+URxvt.saveLines: 8000
+URxvt.termName: rxvt-256color
+URxvt.perl-ext-common:  default,url-select,resize-font,clipboard
+URxvt.url-select.autocopy:  true
+URxvt.url-select.launcher:  qutebrowser
+URxvt.url-select.underline: false
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+URxvt.keysym.M-c:           perl:clipboard:copy
+URxvt.keysym.M-v:           perl:clipboard:paste
+URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
+
+Xcursor.theme: OpenZone_White_Slim
